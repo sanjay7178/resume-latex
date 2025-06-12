@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1749747295 "/home/sanjay7178/resume-latex/main.tex" "main.pdf" "main" 1749747296
+["pdflatex"] 1749748318 "/home/sanjay7178/resume-latex/main.tex" "main.pdf" "main" 1749748318
   "/etc/texmf/web2c/texmf.cnf" 1742826368 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/sanjay7178/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk" 1749740300 10448 eea1748b82aefa9be6bcef38d4d80766 ""
   "/home/sanjay7178/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1749478288 11524 c6e04633ea0d2db831db2ae1385908c7 ""
-  "/home/sanjay7178/resume-latex/main.tex" 1749747295 9111 999fd2ca2040775fad1850cb49ba4e67 ""
+  "/home/sanjay7178/resume-latex/main.tex" 1749748317 9109 1f56426c849cbdac34792d14d2734012 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1136768653 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -82,9 +82,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1742827815 4036811 4cb80868003c86b962b6b5ae1e1e2902 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1742826374 1405646 63b7657e2c1b78bad7ddc75f115ea6c3 ""
-  "main.aux" 1749747296 1491 6f1310ab1be27db7acc0712e1dd2c120 "pdflatex"
-  "main.out" 1749747296 789 46040d37275233fa9cbc76778dea5963 "pdflatex"
-  "main.tex" 1749747295 9111 999fd2ca2040775fad1850cb49ba4e67 ""
+  "main.aux" 1749748318 1457 f31ca213ef019d7333f860bb58764843 "pdflatex"
+  "main.out" 1749748318 773 afa5171d8c8db3f22e0d5c43387fbd6a "pdflatex"
+  "main.tex" 1749748317 9109 1f56426c849cbdac34792d14d2734012 ""
   (generated)
   "main.aux"
   "main.log"
