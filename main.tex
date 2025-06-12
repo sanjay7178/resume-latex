@@ -1,0 +1,194 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Sai Sanjay Kottakota}} & Email: \href{mailto:}{saisanjay7660@gmail.com}\\
+  \href{https://sanjay7178.github.io}{Portfolio: sanjay7178.github.io} & LinkedIn:~~~\href{https://www.linkedin.com/in/sanjay7178}{sanjay7178} \\
+  \href{https://github.com/sanjay7178}{Github: ~~github.com/sanjay7178} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VIT AP University}{Anaravati, India}
+      {MTech Integrated, Computer Science and Engineering;  GPA: 8.17}{November 2021 - Present}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-7pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~Golang, Python, PHP, TypeScript, JavaScript, SQL, Bash, JAVA}
+	\resumeSubItem{Frameworks}{~~~~ReactJS,PyTorch , PyTorch Lightning, Go Gin , gRPC, }
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Kubernetes, Docker, GIT, PostgreSQL, MySQL, MongoDB, PyTorch Lightning, OpenVINO, OpenCV, Redis, RabbitMQ}
+	\resumeSubItem{Platforms}{~~~~~~~Linux, Web, Windows, Arduino, Raspberry PI 4, Azure Kubernetes}
+	% \resumeSubItem{Soft Skills}{~~~~~~~Leadership, Event Management, Writing, Public Speaking, Time Management}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Google Summer of Code - Open Science Labs}{Remote}
+    {Student Developer (Full-time)}{May 2025 - Sep 2025}
+
+    
+\vspace{-4pt}
+    \resumeSubheading
+		{Georgia Southern University BCI Lab}{Remote}
+		{Research Internship}{January 2025 - March 2025}
+		\resumeItemListStart
+        \resumeItem{ EEG-based Emotion Recognition Research}
+          {Developed and trained deep learning models for multiclass emotion classification using a custom EEG dataset. Currently advancing research on multimodal emotion recognition by integrating EEG and facial expression data, employing state-of-the-art models to enhance accuracy and robustness.}
+		\resumeItemListEnd
+\vspace{-4pt}
+    \resumeSubheading
+      {Digitalfortress}{Onsite}
+      {Software Engineer Intern (Part-time)}{May 2024 - Present}
+      \resumeItemListStart
+        \resumeItem{Software Development \& Open Source Contributions}
+          {Contributed to open source projects including \textbf{Saila}:A cross platform Human Interface Device Injection Protection with Smart Phone based Passwordless Security and developed a Kubernetes-based secure browser isolation platform with integrated safe file viewing and phishing mitigation features.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{vRevamp (Chrome Developer Tools , JavaScript , Open Source)}{ A chrome extension for Enhancing VIT AP University Student portal experience in VTOP. }
+\vspace{2pt}
+\resumeSubItem{go-ukip (pending project), Golang , BadUSB Protection , Cross Platform ,Open Source}{ cross platform runtime protection from usb keystroke injection , DNS assignment over DHCP spoof attacks via BadUSB built with golang }
+\vspace{2pt}
+\resumeSubItem{android-vtop-vitap (Maintainer) Open Source }{ Maintaining features and bugs for student productivity app where students for VIT AP University can check their marks ,attendance,exam venues ,notification alerts .. ,Added automated CICD pipeline updating the app without playstore using HonoJS backend via Cloudflare Pages
+}
+\vspace{2pt}
+\resumeSubItem{DeepPairNet , Python, Pytorch , Pytorch Lightning, Resnet50}{ Independently Contributed in creation and training of an hybrid Deep learning model for Facial Antispoofing detection in real time face biometrics using Pytorch Lightning and Inferencing the model in azure functions within a serverless architecture in comprising azure FrontDoor as Load balancer with Azure CDN}
+\vspace{2pt}
+\resumeSubItem{openfortiapauth , Golang , Fyne.io , Cross Platform ,Open Source}{ Open-source implementation for automatic Fortinet FortiAP (Captive Portal) client login.}
+\vspace{2pt}
+\resumeSubItem{KubeBrowse , KubeBrowse, Golang, ReactJS, Redis ,PostgreSQL, ClamAV, Docker , FireJail ,Falco, Chore extension , Open Source }{A Kubernetes-Based Secure Browser Isolation Platform with Integrated Safe File Viewer and Phishing Mitigation}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubItem{Transfer Learning for Bird Species Identification}{2023 2nd International Conference on Computational Systems and Communication (ICCSC) · Jun 8, 2023  }
+\vspace{2pt}
+\resumeSubItem{Secure and Efficient Deployment of Custom Face Antispoofing Detection Models via Serverless Architecture and SaaS Platform)}{A Preprint published on preprints.org · 2024}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------Awards-----------------
+% \section{Honors and Awards}
+% \begin{description}[font=$\bullet$]
+% \item {Awarded title of Intel Software Innovator - May, 2019}
+% \vspace{-5pt}
+% \item {Second Runner's Up at TCS EngiNx Engineering Project Innovation Content - September, 2018 }
+% \vspace{-5pt}
+% \item {Runner's Up at Facebook Developers Circle Hackathon - August, 2017}
+% \end{description}
+
+\vspace{-4pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+    {Community Lead at Null Vijayawada City}{Vijayawada, India}
+    {Hosted monthly cybersecurity meetups, contributed to open source event management platform \textbf{swachalit}}{ 2023 - Present}
+
+% \vspace{2pt}
+%     % \vspace{10pt}\textbf{\large{Community Experience}}
+%     \resumeSubheading
+%     {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}
+%     {Organized events, conducted workshops and delivered workshops reaching over 7000 developers.}{Jan 2018 - Present}
+\resumeSubHeadingListEnd
+
+\vspace{-6pt}
+\section{Talks and Workshops}
+\vspace{1pt}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Privacy Enhanced Technologies}{Standard Chartered, Chennai · 2023-04-25}
+    \vspace{2pt}
+    \resumeSubItem{Docker Orchestration with Kubernetes}{Null Vijayawada Meetup , VIT AP University, Amaravati · 2023-03-15}
+    \vspace{2pt}
+    \resumeSubItem{Simplifying Container Workflows and Orchestration with Sugar }{FOSS Meetup Hyderabad , Plane.so Office  · 2025-05-10}
+  \resumeSubHeadingListEnd
+
+\end{document}
