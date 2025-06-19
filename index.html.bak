@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF.js Viewer</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        #pdf-viewer {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        This implementation uses the PDF.js pre-built viewer, which includes
+        a sidebar for thumbnails/outlines and a toolbar with navigation controls.
+        The file parameter in the URL points to the PDF we want to display.
+    -->
+    <iframe 
+        id="pdf-viewer"
+        src="./pdf.js/web/viewer.html?file=../../main.pdf#sidebar=on&toolbar=on"
+        title="PDF Viewer">
+    </iframe>
+
+    <script>
+        // You can add custom JavaScript here if needed to interact with the PDF viewer
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("PDF viewer loaded");
+        });
+    </script>
+</body>
+</html>
