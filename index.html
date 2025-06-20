@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF.js Viewer (CDN Version)</title>
+    <title>PDF.js Viewer</title>
     <style>
         body, html {
             margin: 0;
@@ -21,14 +21,39 @@
 </head>
 <body>
     <!-- 
-        This version uses the PDF.js viewer hosted on Mozilla's CDN.
-        Replace 'https://example.com/main.pdf' with the actual URL of your PDF.
-        If your PDF is local, you'll need to serve it from a web server.
+        Modified URL parameters:
+        - For mobile: sidebar=off (default for mobile)
+        - For desktop: sidebar=on (default for desktop)
+        The script below handles this dynamically based on device width
     -->
     <iframe 
         id="pdf-viewer"
-        src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://sanjay7178.github.io/resume-latex/main.pdf#sidebar=on&toolbar=on"
         title="PDF Viewer">
     </iframe>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pdfViewer = document.getElementById('pdf-viewer');
+            const isMobile = window.innerWidth <= 768; // Standard mobile breakpoint
+            
+            // Set sidebar to off by default on mobile, on by default for desktop
+            const sidebarParam = isMobile ? 'off' : 'on';
+            
+            // Set the iframe source with appropriate parameters
+            pdfViewer.src = `https://mozilla.github.io/pdf.js/web/viewer.html?file=https://sanjay7178.github.io/resume-latex/main.pdf#sidebar=off&toolbar=off`;
+            
+            console.log(`PDF viewer loaded with sidebar=${sidebarParam} for ${isMobile ? 'mobile' : 'desktop'} view`);
+            
+            // Handle resize events to update the sidebar state if needed
+            window.addEventListener('resize', function() {
+                const currentIsMobile = window.innerWidth <= 768;
+                // Only update if the device category changed (mobile to desktop or vice versa)
+                if (currentIsMobile !== isMobile) {
+                    location.reload(); // Simple solution to update the state
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
