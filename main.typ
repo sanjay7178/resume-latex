@@ -73,15 +73,11 @@
     location: "Remote",
     url: "https://summerofcode.withgoogle.com/programs/2025/projects/eK7R0d7E",
     description: "Google Summer of Code Contributor",
-    position: "Open Source Software Developer Fellowship",
+    position: "Open Source Software Developement Fellowship",
     startDate: "2025-05-08",
     endDate: "2025-09-15",
     highlights: (
-      // "Developed a distributed caching solution for Azure Functions, reducing cold start latency by 30% and improving overall performance for serverless applications.",
-      // "Implemented a monitoring dashboard using Power BI to visualize key performance metrics, enabling proactive issue detection and resolution.",
-      // "Collaborated with a team of engineers to refactor legacy code, improving maintainability and reducing technical debt by 25%.",
-      // "Contributed to the design and development of a new API gateway, enhancing scalability and security for cloud-based applications.",
-      // "Presented project outcomes to senior engineers and received commendation for delivering impactful solutions under tight deadlines.",
+      "Integrated Docker Swarm support into Sugar CLI and architected swarm-external-secrets plugin bridging external secret providers (HashiCorp Vault, Azure Key Vault, OpenBao) with Docker Swarm, addressing critical gaps in container orchestration and security management while contributing to cross-platform packaging improvements and presenting at " + link("https://fossunited.org/c/hyderabad/2025-apr/cfp/3cvk203l1o")[FOSS United Hyderabad Meetup.],
     ),
   ),
   (
@@ -425,8 +421,26 @@ custom sections
   )
 )
 
+#let talks_workshops_section = (
+  title: "Talks and Workshops",
+  highlights: (
+    (
+      summary: link("https://www.linkedin.com/feed/update/urn:li:activity:7073359490414235648/")["Privacy Enhanced Technologies"],
+      description: "Standard Chartered, Chennai - Apr 2023",
+    ),
+    (
+      summary: link("https://null.community/event_sessions/4104-docker-orchestration-with-kubernetes")["Docker Orchestration with Kubernetes"],
+      description: "Null Vijayawada Meetup , VIT AP University, Amaravati - Mar 2023",
+    ),
+    (
+      summary: link("https://fossunited.org/c/hyderabad/2025-apr/cfp/3cvk203l1o")["Simplifying Container Workflows and Orchestration with Sugar"],
+      description: "FOSSUnited Meetup Hyderabad , Planetoid Office - May 2024",
+    ),
+  )
+)
+
 #let render_font = "New Computer Modern"
-#let render_size = 8pt
+#let render_size = 7.3pt
 #let render_size_title = render_size * 1.5
 #let render_size_section = render_size * 1.3
 #let render_size_entry = render_size * 1.1
@@ -479,5 +493,7 @@ custom sections
 #render-publication(publications)
 
 #render-custom(programming_language_section)
+
+#render-custom(talks_workshops_section)
 
 // #render-custom(skills_section)
