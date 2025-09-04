@@ -11,13 +11,13 @@
 #let profiles = (
   (
     network: "GitHub",
-    username: "sanjay7179",
-    url: "github.com/sanjay7179",
+    username: "sanjay7178",
+    url: "github.com/sanjay7178",
   ),
   (
     network: "LinkedIn",
     username: "sanjay7178",
-    url: "linkedin.com/in/xinmiao-yu-619128174",
+    url: "linkedin.com/in/sanjay7178",
   ),
 )
 
