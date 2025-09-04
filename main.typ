@@ -434,7 +434,7 @@ custom sections
     ),
     (
       summary: link("https://fossunited.org/c/hyderabad/2025-apr/cfp/3cvk203l1o")["Simplifying Container Workflows and Orchestration with Sugar"],
-      description: "FOSSUnited Meetup Hyderabad , Plane.so Office - May 2024",
+      description: "FOSSUnited Meetup Hyderabad , Plane.so Office - May 2025",
     ),
   )
 )
