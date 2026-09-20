@@ -1,7 +1,7 @@
 #import "@preview/fantastic-cv:0.1.0": *
 
 #let name = "Sai Sanjay Kottakota"
-#let location = "Vijayawada, Andhra Pradesh, India"
+#let location = "Bengaluru, Karnataka, India"
 #let email = "saisanjay7660@gmail.com"
 // #let phone = "+1 (xxx) xxx-xxxx"
 #let url = "sanjay7178.github.io"
@@ -43,8 +43,8 @@
     url: "vitap.ac.in",
     area: "Computer Science and Engineering",
     studyType: "Master of Technology (Integrated)",
-    startDate: "2021-09-01",
-    endDate: "2026-06-01",
+    startDate: "Sep 2021",
+    endDate: "Jun 2026",
     score: "8.68/10.0",
     courses: (
       "Operating Systems", "Data Structures", "Analysis Of Algorithms", "Deep Learning", "Introduction to Networking", "Databases", "Software Application Architecture", "Application Development and Deployment Architecture" ,"NoSQL Databases"
@@ -72,15 +72,28 @@
   name: "Murf AI",
   location: "Bengaluru, India",
   url: "https://murf.ai",
-  description: "Internship",
-  position: "Associate Software Developer",
-  startDate: "2025-10-08",
+  description: "Full-time",
+  position: "Software Development Engineer I",
+  startDate: "Jun 2026",
   endDate: "Present",
   highlights: (
     "Developing an internal Python-based text normalization library for multilingual TTS (French, English, and Telugu).",
-    "Enhanced exisitng regression tests to ensure higher accuracy and reliability in text-to-speech processing.",
-    // "Collaborating with linguists to refine text normalization rules and phonetic consistency across languages.",
-    // "Built an internal evaluation tool to compare in-house TTS models with competitors such as ElevenLabs, Sarvam AI, and Smallest AI.",
+    "Developed automated TTS benchmarking for character error rate (CER), word error rate (WER), and grapheme-cluster error rate (GCER), using an OpenAI API-based AI judge to profile and improve multilingual text-normalization quality.",
+  ),
+),
+
+(
+  name: "Murf AI",
+  location: "Bengaluru, India",
+  url: "https://murf.ai",
+  description: "Internship",
+  position: "Associate Software Development Engineer Intern",
+  startDate: "Oct 2025",
+  endDate: "Feb 2026",
+  highlights: (
+    "Re-architected the " + link("https://github.com/segment-any-text/wtpsplit")[wtpsplit] + " sentence-segmentation model for NVIDIA Triton Inference Server, enabling scalable production inference.",
+    "Deployed ByT5 and BERT NLP models on distributed AWS EC2 instances behind an Application Load Balancer.",
+    "Optimized NLP inference with ONNX IR, TensorRT, CUDA Graphs, and FlashAttention; used NVIDIA perf_analyzer to increase throughput by 20% and reduce average REST API latency by 15%.",
   ),
 ),
 
@@ -90,12 +103,12 @@
   url: "https://mentorship.lfx.linuxfoundation.org/project/8f651e4b-a0bf-468a-ab2b-a8167bd85e87",
   description: "LFX Mentorship Program",
   position: "Open Source Contributor — kube-burner (Red Hat Performance Engineering)",
-  startDate: "2026-03-01",
-  endDate: "Present",
+  startDate: "Mar 2026",
+  endDate: "May 2026",
   highlights: (
-    "Selected for the Linux Foundation LFX Mentorship to work on Kubernetes performance testing enhancements with the Red Hat Performance Engineering team via " + link("https://github.com/kube-burner/kube-burner")[kube-burner] + ", contributing 3 merged PRs included in the v2.0.0 milestone.",
-    "Implemented pprof DaemonSet deployment for node-level CPU/memory profiling " + link("https://github.com/kube-burner/kube-burner/pull/1045")[(#1045)] + ", Helm-like " + raw("--set") + " flag for runtime config overrides " + link("https://github.com/kube-burner/kube-burner/pull/1047")[(#1047)] + ", and multi-document YAML support for complex Kubernetes manifests " + link("https://github.com/kube-burner/kube-burner/pull/1052")[(#1052)] + ".",
-    "Developed lifecycle hooks for job execution stages " + link("https://github.com/kube-burner/kube-burner/pull/1068")[(#1068)] + " using concurrent Go patterns and deep Kubernetes API integration.",
+    "Contributed 7 merged Go pull requests to " + link("https://github.com/kube-burner/kube-burner")[kube-burner] + ", a Kubernetes performance and scale-testing framework maintained by Red Hat Performance Engineering.",
+    "Built KEDA ScaledObject performance testing with phase-level latency measurement, an end-to-end autoscaling workload, and CPU and memory profiling " + link("https://github.com/kube-burner/kube-burner/pull/1234")[(#1234)] + ".",
+    "Improved profiling and workload configuration through pprof DaemonSet support " + link("https://github.com/kube-burner/kube-burner/pull/1045")[(#1045)] + ", runtime " + raw("--set") + " overrides " + link("https://github.com/kube-burner/kube-burner/pull/1047")[(#1047)] + ", multi-document YAML manifests " + link("https://github.com/kube-burner/kube-burner/pull/1052")[(#1052)] + ", and concurrent job lifecycle hooks " + link("https://github.com/kube-burner/kube-burner/pull/1068")[(#1068)] + ".",
   ),
 ),
 
@@ -105,8 +118,8 @@
     url: "https://summerofcode.withgoogle.com/programs/2025/projects/eK7R0d7E",
     description: "Open Science Labs",
     position: "Open Source Software Developement Fellowship",
-    startDate: "2025-05-08",
-    endDate: "2025-09-15",
+    startDate: "May 2025",
+    endDate: "Sep 2025",
     highlights: (
       "Integrated Docker Swarm support into Sugar CLI and architected swarm-external-secrets plugin bridging external secret providers (HashiCorp Vault, Azure Key Vault, OpenBao) with Docker Swarm, addressing critical gaps in container orchestration and security management while contributing to cross-platform packaging improvements and presenting at " + link("https://fossunited.org/c/hyderabad/2025-apr/cfp/3cvk203l1o")[FOSS United Hyderabad Meetup.],
     ),
@@ -117,8 +130,8 @@
     url: "https://digitalfortress.in",
     description: "Internship",
     position: "Software Development Engineer ",
-    startDate: "2024-05-01",
-    endDate: "2025-05-01",
+    startDate: "May 2024",
+    endDate: "May 2025",
     highlights: (
       "Built open source project Saila serving 500+ users with cross-platform HID injection protection. ",
       "Engineered Kubernetes-based secure browser isolation platform reducing phishing risks by 90% and handling 1000+ concurrent sessions with integrated safe file viewing capabilities.",
@@ -164,7 +177,7 @@
     url: "https://github.com/browsersec/KubeBrowse",
     source_code: "https://github.com/browsersec/KubeBrowse",
     roles: ("Individual Contributor", "Go , Kubernetes , Docker , React , Websockets , Postgres , Redis , Minio , Falco , Isolated Sandbox"),
-    startDate: "2025-06-01",
+    startDate: "Jun 2025",
     endDate: "Present",
     description: "Developed and maintained an Industry first open-source Browser Detection and Response tool for Enterprises and Homelabs.",
     highlights: (
@@ -178,8 +191,8 @@
     url: "https://chromewebstore.google.com/detail/vrevamp/jfmlhhjlkbliphgkmeingeacbijcilcl",
     source_code: "github.com/sanjay7178/vRevamp",
     roles: ("Contributor", "Javascript , Chrome Extension , Chrome Manifest V3 "),
-    startDate: "2023-09-01",
-    endDate: "2024-12-01",
+    startDate: "Sep 2023",
+    endDate: "Dec 2024",
     description: "A chrome extension for enhancing VIT AP University Student portal experience in VTOP.",
     highlights: (
       "Improved user experience of university students on a centralized ERP portal using chrome extension.",
@@ -192,8 +205,8 @@
     url: "https://sugar-org.github.io/swarm-external-secrets/",
     source_code: "https://github.com/sugar-org/swarm-external-secrets/",
     roles: ("Contributor", "Go , Docker Plugin , AWS Secrets Manager , GCP Secret Manager , OpenBao , Hashicorp Vault , Azure Key Vault"),
-    startDate: "2025-05-01",
-    endDate: "2025-09-15",
+    startDate: "May 2025",
+    endDate: "Sep 2025",
     description: "A Docker Swarm secrets plugin that integrates with multiple secret management providers including HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, and OpenBao.",
     highlights: (
       "Designed and developed a Docker plugin enabling external secrets providers (e.g., Vault, AWS Secrets Manager) to integrate with Docker Swarm—bridging a gap between Kubernetes External Secrets and Swarm environments.",
@@ -222,8 +235,8 @@
     organization: "Null Vijayawada Chapter",
     position: "Community Lead",
     url: "https://nullvijayawada.org/",
-    startDate: "2023-08-01",
-    endDate: "2025-05-01",
+    startDate: "Aug 2023",
+    endDate: "May 2025",
     summary: "Coordinated and organised Monthly meetups on various Cyber Security Domains, CTF's and Workshops",
     location: "Vijayawada, IN",
     highlights: (
@@ -237,6 +250,12 @@
 
 // Updated achievements section data structure with your actual achievements
 #let achievements = (
+  (
+    title: "Linux Foundation Training (LiFT) Scholarship",
+    date: "2026",
+    description: "Selected for a Linux Foundation Training scholarship, receiving one e-learning course and one certification exam registration.",
+    category: "Technical",
+  ),
   (
     title: "Google Summer of Code 2025",
     date: "2025",
@@ -455,6 +474,10 @@ custom sections
 #let talks_workshops_section = (
   title: "Talks and Workshops",
   highlights: (
+    (
+      summary: link("https://www.youtube.com/watch?v=85-8e2W1o0Q")["Setting Your Cluster on Fire: Deep Performance Profiling with kube-burner"],
+      description: "Cloud Native Summit Kerala, Kochi - Aug 2026 | Talk recording",
+    ),
     (
       summary: link("https://www.linkedin.com/feed/update/urn:li:activity:7073359490414235648/")["Privacy Enhanced Technologies"],
       description: "Standard Chartered, Chennai - Apr 2023",
