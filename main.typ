@@ -501,9 +501,9 @@ custom sections
   name: name,
   location: location,
   email: email,
+  phone: none,
   url: url,
   profiles: profiles,
-  // phone: phone,
 )
 
 #render-education(educations)
