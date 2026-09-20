@@ -45,7 +45,7 @@
     studyType: "Master of Technology (Integrated)",
     startDate: "2021-09-01",
     endDate: "2026-06-01",
-    score: "8.41/10.0",
+    score: "8.68/10.0",
     courses: (
       "Operating Systems", "Data Structures", "Analysis Of Algorithms", "Deep Learning", "Introduction to Networking", "Databases", "Software Application Architecture", "Application Development and Deployment Architecture" ,"NoSQL Databases"
     ),
@@ -81,6 +81,21 @@
     "Enhanced exisitng regression tests to ensure higher accuracy and reliability in text-to-speech processing.",
     // "Collaborating with linguists to refine text normalization rules and phonetic consistency across languages.",
     // "Built an internal evaluation tool to compare in-house TTS models with competitors such as ElevenLabs, Sarvam AI, and Smallest AI.",
+  ),
+),
+
+(
+  name: "Linux Foundation Mentee",
+  location: "Remote",
+  url: "https://mentorship.lfx.linuxfoundation.org/project/8f651e4b-a0bf-468a-ab2b-a8167bd85e87",
+  description: "LFX Mentorship Program",
+  position: "Open Source Contributor — kube-burner (Red Hat Performance Engineering)",
+  startDate: "2026-03-01",
+  endDate: "Present",
+  highlights: (
+    "Selected for the Linux Foundation LFX Mentorship to work on Kubernetes performance testing enhancements with the Red Hat Performance Engineering team via " + link("https://github.com/kube-burner/kube-burner")[kube-burner] + ", contributing 3 merged PRs included in the v2.0.0 milestone.",
+    "Implemented pprof DaemonSet deployment for node-level CPU/memory profiling " + link("https://github.com/kube-burner/kube-burner/pull/1045")[(#1045)] + ", Helm-like " + raw("--set") + " flag for runtime config overrides " + link("https://github.com/kube-burner/kube-burner/pull/1047")[(#1047)] + ", and multi-document YAML support for complex Kubernetes manifests " + link("https://github.com/kube-burner/kube-burner/pull/1052")[(#1052)] + ".",
+    "Developed lifecycle hooks for job execution stages " + link("https://github.com/kube-burner/kube-burner/pull/1068")[(#1068)] + " using concurrent Go patterns and deep Kubernetes API integration.",
   ),
 ),
 
@@ -444,10 +459,10 @@ custom sections
       summary: link("https://www.linkedin.com/feed/update/urn:li:activity:7073359490414235648/")["Privacy Enhanced Technologies"],
       description: "Standard Chartered, Chennai - Apr 2023",
     ),
-    (
-      summary: link("https://null.community/event_sessions/4104-docker-orchestration-with-kubernetes")["Docker Orchestration with Kubernetes"],
-      description: "Null Vijayawada Meetup , VIT AP University, Amaravati - Mar 2023",
-    ),
+    // (
+    //   summary: link("https://null.community/event_sessions/4104-docker-orchestration-with-kubernetes")["Docker Orchestration with Kubernetes"],
+    //   description: "Null Vijayawada Meetup , VIT AP University, Amaravati - Mar 2023",
+    // ),
     (
       summary: link("https://fossunited.org/c/hyderabad/2025-apr/cfp/3cvk203l1o")["Simplifying Container Workflows and Orchestration with Sugar"],
       description: "FOSSUnited Meetup Hyderabad , Plane.so Office - May 2025",
@@ -500,13 +515,14 @@ custom sections
 #render-volunteer(volunteers)
 
 
-== Open Source Contributions
 
-*Total Contributions*: 91 PRs across 38+ repositories | 61 merged | 67% merge rate
-- *Chaos Engineering*: 15 PRs to krkn-chaos (testing, rollback features, cloud integrations)
-- *Container Orchestration*: 11 PRs to Sugar-org (Docker Swarm management, external secrets)
-- *Kubernetes Tooling*: 8 PRs to KubeSlice, Kube-burner (multi-arch support, monitoring)
-- *Educational Projects*: 7 PRs to android-vtop-vitap (mobile app enhancements)
+// == Open Source Contributions
+
+// *Total Contributions*: 91 PRs across 38+ repositories | 61 merged | 67% merge rate
+// - *Chaos Engineering*: 15 PRs to krkn-chaos (testing, rollback features, cloud integrations)
+// - *Container Orchestration*: 11 PRs to Sugar-org (Docker Swarm management, external secrets)
+// - *Kubernetes Tooling*: 8 PRs to KubeSlice, Kube-burner (multi-arch support, monitoring)
+// - *Educational Projects*: 7 PRs to android-vtop-vitap (mobile app enhancements)
 
 
 // Added achievements section here

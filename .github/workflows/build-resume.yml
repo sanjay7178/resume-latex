@@ -1,0 +1,31 @@
+name: Build resume
+
+on:
+  push:
+    paths:
+      - main.typ
+      - Makefile
+      - .github/workflows/build-resume.yml
+  pull_request:
+    paths:
+      - main.typ
+      - Makefile
+      - .github/workflows/build-resume.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v4
+      - run: make build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: resume.pdf
+          if-no-files-found: error
